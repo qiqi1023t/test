@@ -4,8 +4,8 @@
 
 The scripts in this folder are used to
  
-* 1) postprocessing the ERA-interim reanalysis data
-* 2)postprocessing the DA experiments
+ 1) postprocessing the ERA-interim reanalysis data
+ 2) postprocessing the DA experiments
 
 for analysing the atmosphere variables.
  
