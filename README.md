@@ -4,8 +4,8 @@
 
 The scripts in this folder are used to
  
- 1) postprocessing the ERA-interim reanalysis data
- 2) postprocessing the DA experiments
+* postprocessing the ERA-interim reanalysis data
+* postprocessing the DA experiments
 
 for analysing the atmosphere variables.
  
@@ -31,10 +31,24 @@ TO do this, we need to use **CDO**:
 module load CDO
 ```  
 
+First we need to merge 12 files into 1 file:
 
-## Steps to use these scripts
+```
+to be added
+```
 
-### Deal with urface level data
+Then we remap the grid into T63:
+
+```
+cdo,remap ...
+```
+
+Afterwards we get the postprocessed file ''.
+
+
+## Deal with the DA experiments output file
+
+### Deal with surface level data
 
 * copy 'extract.sh' to the run directory, e.g.:
 
