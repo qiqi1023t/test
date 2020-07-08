@@ -1,10 +1,15 @@
-# ERA-interim posprocessing
+# ERA-interim and simulation experiments posprocessing
 
 ##### modified July 08, 2020 by Qi Tang
 
-The scripts in this folder are used to postprocessing the ERA-interim reanalysis data, which can be used later for postprocessing the DA experiments.
+The scripts in this folder are used to
+ 
+* 1) postprocessing the ERA-interim reanalysis data
+* 2)postprocessing the DA experiments
 
-## Original .nc files
+for analysing the atmosphere variables.
+ 
+## Original ERA files
 
 ### Type of time interval
 
@@ -15,6 +20,16 @@ The scripts in this folder are used to postprocessing the ERA-interim reanalysis
 
 * surface
 * perssure levels
+
+### Convert and merge files
+
+To make these ERA data comparable with our experiment output data, we need to remap these data into our T63 resolution grids. Also we need to merge the monthly dataset into one file which contains the one year (12 months) data.
+
+TO do this, we need to use **CDO**:
+
+```
+module load CDO
+```  
 
 
 ## Steps to use these scripts
