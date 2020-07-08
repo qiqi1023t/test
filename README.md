@@ -4,6 +4,12 @@
 
 The scripts in this folder are used to postprocessing the ERA-interim reanalysis data, which can be used later for postprocessing the DA experiments.
 
-There are two types of .nc files:
+## Types of original .nc files:
+
 * the monthly means of daily means
-2) daily
+* daily
+
+## Types of levels:
+
+* surface
+* perssure level
