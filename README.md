@@ -17,9 +17,9 @@ The scripts in this folder are used to postprocessing the ERA-interim reanalysis
 * perssure levels
 
 
-### Steps to use these scripts
+## Steps to use these scripts
 
-#### Deal with urface level data
+### Deal with urface level data
 
 * copy 'extract.sh' to the run directory, e.g.:
 
