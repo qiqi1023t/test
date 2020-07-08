@@ -61,11 +61,34 @@ cp extract.sh $WORK_DIRECTORY
 ./extract.sh
 ```
 
-* run the script 'cal_monmean_XX.sh' to calculate the ensemble mean of temperature/u/v:
+* copy and run the script 'cal_monmean_XX.sh' to calculate the ensemble mean of temperature/u/v:
 
 ```
+cp cal_monmean_* $WORK_DIRECTORY
 ./cal_monmean_temp2.sh
 ./cal_monmean_u10.sh
 ./cal_monmean_v10.sh
 ```
+
+### Deal with pressure level data
+
+#### calculate the ensemble mean of temperature
+
+* copy and run the script 'cal_ensmean_p.sh':
+
+```
+cp cal_ensmean_p.sh $WORK_DIRECTORY
+./cal_ensmean_p.sh
+```
+ 
+#### calculate the ensemble mean of uv
+
+* copy and run the script 'cal_ensmean_uv_p.sh':
+
+```
+cp cal_ensmean_uv_p.sh $WORK_DIRECTORY
+./cal_ensmean_uv_p.sh
+```
+
+
 
