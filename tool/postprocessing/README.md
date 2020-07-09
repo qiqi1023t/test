@@ -50,11 +50,12 @@ Afterwards we get the postprocessed file ''.
 
 ### Deal with surface level data
 
-* copy 'extract.sh' to the run directory, e.g.:
+* copy 'extract.sh' to the run directory:
 
 ```
 cp extract.sh $WORK_DIRECTORY
 ```
+
 * run the script extract.sh to get the separate temperature/u/v file in the sub-directory:
 
 ```
@@ -80,7 +81,15 @@ cp cal_monmean_* $WORK_DIRECTORY
 cp cal_ensmean_p.sh $WORK_DIRECTORY
 ./cal_ensmean_p.sh
 ```
- 
+
+Here we select five pressure levels:
+
+```
+cdo ml2pl,92500,85000,50000,30000,20000 test1.nc test_300.nc
+```
+
+You could modify this of course, just keep in mind that the unit is *Pa* (the ERA data is stored as *hPa*)
+
 #### calculate the ensemble mean of uv
 
 * copy and run the script 'cal_ensmean_uv_p.sh':
