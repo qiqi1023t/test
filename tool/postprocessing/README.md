@@ -31,19 +31,13 @@ TO do this, we need to use **CDO**:
 module load CDO
 ```  
 
-First we need to merge 12 files into 1 file:
+Remap the grid into T63:
 
 ```
-to be added
+cdo remapycon,ensmean_300_monmean.nc ERA_monthly_mean_2016_all.nc ERA_monthly_mean_2016_all_T63.nc
 ```
 
-Then we remap the grid into T63:
-
-```
-cdo,remap ...
-```
-
-Afterwards we get the postprocessed file ''.
+Here the original ERA file is ERA_monthly_mean_2016_all.nc and the postprocessed file 'ERA_monthly_mean_2016_all_T63.nc'.
 
 
 ## Deal with the DA experiments output file
